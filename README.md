@@ -25,8 +25,8 @@ POST /<nth>/comment/<author> body=<text> -> new_len
 GET /<nth>/comments/len -> num_comments
 
 
-GET /pop/ (basic auth) -> new_len
-POST /<author>/ body=<text> (basic auth) -> new_len
+GET /pop/ (auth) -> new_len
+POST /<author>/ body=<text> (auth) -> new_len
 ```
 
 ## Extra

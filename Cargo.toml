@@ -1,0 +1,6 @@
+[package]
+name = "Timeliner"
+version = "0.1.0"
+authors = ["duangsuse <fedora-opensuse@outlook.com>"]
+
+[dependencies]

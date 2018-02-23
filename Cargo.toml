@@ -1,12 +1,22 @@
 [package]
-name = "Timeliner"
+name = "timeliner"
 version = "0.1.0"
 authors = ["duangsuse <fedora-opensuse@outlook.com>"]
 license = "MIT"
 
 [dependencies]
-tokio-minihttp = "0.1.0"
-lazy_static = "0.1.0"
-serde_json = "1.0.9"
+tokio-minihttp = { version = "0.1.0", path = "../tokio-minihttp" }
 tokio-signal = "0.1"
+num_cpus = "1.8.0"
+lazy_static = "0.1.0"
+serde = "1.0.27"
+serde_json = "1.0.9"
+serde_derive = "1.0.27"
 websocket = "0.20.2"
+futures = "0.1.11"
+tokio-proto = "0.1"
+tokio-service = "0.1"
+
+[[bin]]
+name = "timelinerd"
+path = "src/main.rs"

@@ -15,10 +15,13 @@ Comment: String author, Date time, String text
 ## APIs
 
 ```http
+GET /version -> version
+
 GET / -> num_posts
 GET /<nth>/ -> Post
 GET /<nth>/views -> num_views
 GET /<nth>/comments/ -> [Comment
+POST /<nth>/comment/<author> body=<text> -> new_len
 GET /<nth>/comments/len -> num_comments
 
 
@@ -39,3 +42,5 @@ SIGQUIT: output data and exit
 SIGUSR1: output data
 
 SIGUSR2: clear anti-spamming log
+
+编译前下载好 tokio-minihttp 放在 `../tokio-minihttp/` 里
